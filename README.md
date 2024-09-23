@@ -4,4 +4,12 @@ En este curso vamos a **trabajar** los siguientes apartados:
 - Docker
 - PHP
 - Configuracion de CMS
-- jhjh
+
+---
+
+Vamos a utilizar los siguientes *programas* :
+
+- Visual Studio
+- VirtualBox
+- Git
+
