@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de IMC</title>
+</head>
+<body>
+    <h1>Calculadora de IMC</h1>
+
+    <label for="altura">Escribe tu altura en centimetros</label>
+    <input type="text" id="altura">
+    <label for="peso">Escribe tu peso en Kilogramos</label>
+    <input type="text" id="peso">
+    <button onclick="calimc()">Calcular</button>
+    <p id="calculo"></p>
+
+    <script>
+        function calimc(){
+            var alturacm = parseFloat(document.getElementById("altura").value);
+            var pesokg = parseFloat(document.getElementById("peso").value);
+            var imc = (pesokg / Math.pow(alturacm, 2)).toFixed(3);
+
+            if (imc < 18.5){
+                document.getElementById("calculo").innerHTML = "Peso inferior a lo normal " + imc;
+            }
+            else if(imc >= 18.5 && imc < 24.9) {
+                document.getElementById("calculo").innerHTML = "Peso normal " + imc; 
+            }
+            else if (imc >=25 && imc < 30){
+                document.getElementById("calculo").innerHTML = "Peso superior a lo normal "+ imc;
+            }
+            else{
+                document.getElementById("calculo").innerHTML = "Peso con obesidad "+ imc; 
+            }
+        }
+    </script>
+</body>
+</html>
