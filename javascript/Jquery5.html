@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.7.1.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Funcion fade y toggle</h1>
+    <p>De nuevo, Lorem Ipsum de hacendado, ahora con mas queso</p>
+    <p>Advertencia no recomendado para script kiddos</p>
+    <button>Press for fun</button>
+    <script>
+        $(document).ready(function () {
+
+            $("p").fadeOut().fadeIn();
+
+            $("button").click(function(){
+                $("p").fadeToggle();
+            })
+        });
+    </script>
+</body>
+</html>

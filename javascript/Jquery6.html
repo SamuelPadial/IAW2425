@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.7.1.js"></script>
+    <title>Ejercicio6</title>
+    <style>
+        img {
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ahora toca contar</h1>
+    <h2>A mi me enseñaron en el cole</h2>
+
+    <p>Mercadona se ha quedado sin existencias de Lorem ipsum</p>
+    <p>Tendremos que pedirlo a lidl</p>
+    <p>Las verduras estan en oferta, nadie las quiere</p>
+
+    <p>Puedes consultarlo <a href="https://www.lidl.es/es/mira-que-frutas-y-verduras/c3892?srsltid=AfmBOor4aqpvp9SZbT5wiTSYAzhaCToaMorMft54UYvycuF9gzVgxnMG">aqui</a></p>
+
+    <img src="https://i.pinimg.com/736x/6b/86/eb/6b86eb07756b29828a2a43551fd5f034.jpg">
+    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/602f0d37-237c-493b-bc7e-30f7dfc16a3e/deff4bk-218aef87-5929-4997-bfce-bebf0bdcce7a.jpg/v1/fill/w_1024,h_577,q_75,strp/somebody_please_think_of_the_children___2__by_luvus_7_deff4bk-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTc3IiwicGF0aCI6IlwvZlwvNjAyZjBkMzctMjM3Yy00OTNiLWJjN2UtMzBmN2RmYzE2YTNlXC9kZWZmNGJrLTIxOGFlZjg3LTU5MjktNDk5Ny1iZmNlLWJlYmYwYmRjY2U3YS5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.IrCiuxCQLNlyUO_hUqGshU3zHmWgRG-tKZA5zmMx_kU">
+
+    <div>
+        <h3>Elementos</h3>
+        <ul>
+            <label for="encabeza">Encabezados</label>
+            <li id="encabeza"></li>
+            <label for="parra">Parrafos</label>
+            <li id="parra"></li>
+            <label for="enlace">Enlaces</label>
+            <li id="enlace"></li>
+            <label for="imagen">Imagenes</label>
+            <li id="imagen"></li>
+        </ul>
+    </div>
+    <script>
+        $(document).ready(function () {
+            var contarh1 = $("*").find("h1,h2").length;
+            var contarp = $("*").find("p").length;
+            var contara = $("*").find("a").length;
+            var contarimg = $("*").find("img").length;
+
+            $("#encabeza").text(contarh1);
+            $("#parra").text(contarp);
+            $("#enlace").text(contara);
+            $("#imagen").text(contarimg);
+
+        });
+    </script>
+</body>
+</html>

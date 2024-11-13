@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.7.1.js"></script>
+    <title>Ejercicio1</title>
+</head>
+<body>
+<h1>Esto es un encabezado muy chulo</h1>
+<p>El lorem ipsum de hacendado</p>
+<p>MESTANMATANDO!</p>
+<button id="hidbutton">Ocultar</button>
+<button id="showbutton">Mostrar</button>
+
+<script>
+    $(document).ready(function(){
+        $("#hidbutton").click(function(){
+            $("p,h1").hide();
+        });
+        $("#showbutton").click(function(){
+            $("p,h1").show();
+        });
+    });
+</script>
+</body>
+</html>
