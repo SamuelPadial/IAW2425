@@ -9,11 +9,16 @@
 
     <h1>Lista de elementos php</h1>
     <?php
-    $dir = "/home/usuario/Escritorio/IAW2425/php";
-    $scaned = scandir($dir);
-    function listado(){
-        
+    $dir = scandir(".");
+    foreach ($dir as $docu){
+        if ($docu === "." || $docu === "..") continue;
+
+        $docuName = $docu;
+        $docuType = is_dir($)
+        $docuSize =
+        $docuMod =
     }
+    
     ?>
     
 </body>
