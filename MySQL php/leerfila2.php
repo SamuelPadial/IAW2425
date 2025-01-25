@@ -1,10 +1,9 @@
 <?php
 // Conexion BD
-$servername =  "sql308.thsite.top";
-$username = "thsi_38097495";
-$password = "?X1!KS8e";
-$dbname = "thsi_38097495_bdejemplo";
-
+$servername =  "***";
+$username = "***";
+$password = "***";
+$dbname = "***";
 $conexbd = mysqli_connect($servername,$username,$password,$dbname);
 
 if (!$conexbd) {
