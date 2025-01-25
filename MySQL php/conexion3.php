@@ -1,8 +1,8 @@
 <?php
-$servername = "sql308.thsite.top";
-$username = "thsi_38097495";
-$password = "?X1!KS8e";
-$dbname = "thsi_38097495_bdejemplo";
+$servername =  "***";
+$username = "***";
+$password = "***";
+$dbname = "***";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
